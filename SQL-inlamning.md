@@ -1,8 +1,8 @@
 # SQL-inlämning — Diskografi
 
-**Namn:** [Ditt namn]  
-**Artist:** [Din valda artist]  
-**Datum:** [Datum]
+**Namn:** [David Billfeldt]  
+**Artist:** [Greta Van Fleet]  
+**Datum:** [18-10-2026]
 
 ---
 
@@ -14,7 +14,14 @@
 ## 1. Skapa databasen — CREATE TABLE
 
 ```sql
---- skriv din SQL-kod här ---
+PRAGMA foreign_keys = ON;
+
+CREATE TABLE artists (
+                         id           INTEGER PRIMARY KEY,
+                         name         TEXT NOT NULL,
+                         formed_year  INTEGER,
+                         country      TEXT
+);
 
 ```
 
