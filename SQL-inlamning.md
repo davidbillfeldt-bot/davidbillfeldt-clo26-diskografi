@@ -119,7 +119,11 @@ GROUP BY album_id;
 
 
 --- query 7: Albumet med flest låtar ---
-
+SELECT album_id, COUNT(*) AS antal
+FROM songs
+GROUP BY album_id
+ORDER BY antal DESC
+    LIMIT 1;
 
 --- query 8: Alla låtar längre än 4 minuter (240 sekunder), med albumtitel ---
 
