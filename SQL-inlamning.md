@@ -38,6 +38,15 @@ CREATE TABLE albums (
                         FOREIGN KEY (artist_id) REFERENCES artists(id)
 );
 
+CREATE TABLE songs (
+                       id                INTEGER PRIMARY KEY,
+                       title             TEXT NOT NULL,
+                       duration_seconds  INTEGER,
+                       track_number      INTEGER,
+                       album_id          INTEGER NOT NULL,
+                       FOREIGN KEY (album_id) REFERENCES albums(id)
+);
+
 ```
 
 ---
