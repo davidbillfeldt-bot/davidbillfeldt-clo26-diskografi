@@ -68,10 +68,14 @@ FROM songs
 GROUP BY album_id;
 
 
---- query 4: Längsta låten ---
+SELECT * FROM songs
+ORDER BY duration_seconds DESC
+    LIMIT 1;
 
 
---- query 5: Alla låtar sorterade alfabetiskt ---
+SELECT * FROM songs
+ORDER BY title;
+
 
 ```
 
