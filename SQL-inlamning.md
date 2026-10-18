@@ -126,5 +126,8 @@ ORDER BY antal DESC
     LIMIT 1;
 
 --- query 8: Alla låtar längre än 4 minuter (240 sekunder), med albumtitel ---
-
+SELECT songs.title, songs.duration_seconds, albums.title AS album
+FROM songs
+         JOIN albums ON songs.album_id = albums.id
+WHERE songs.duration_seconds > 240;
 ```
