@@ -84,7 +84,8 @@ ORDER BY title;
 ## 4. Lägg till en ny rad — INSERT
 
 ```sql
---- lägg till ett nytt album eller en ny låt ---
+INSERT INTO songs (title, duration_seconds, track_number, album_id)
+VALUES ('Play Your Games', 195, 9, 1);
 
 ```
 
@@ -93,7 +94,7 @@ ORDER BY title;
 ## 5. Ta bort en rad — DELETE
 
 ```sql
---- ta bort en rad ur valfri tabell ---
+
 
 ```
 
