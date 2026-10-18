@@ -113,7 +113,9 @@ WHERE id IN (7, 8, 9);
 ## 7. VG-queries (om du siktar på VG)
 
 ```sql
---- query 6: Snittlängd på låtar per album ---
+SELECT album_id, ROUND(AVG(duration_seconds), 0) AS snittlangd
+FROM songs
+GROUP BY album_id;
 
 
 --- query 7: Albumet med flest låtar ---
