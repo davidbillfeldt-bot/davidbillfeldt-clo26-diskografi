@@ -30,7 +30,13 @@ CREATE TABLE artists (
 ## 2. Seeda med data — INSERT
 
 ```sql
---- skriv din SQL-kod här ---
+CREATE TABLE albums (
+                        id            INTEGER PRIMARY KEY,
+                        title         TEXT NOT NULL,
+                        release_year  INTEGER,
+                        artist_id     INTEGER NOT NULL,
+                        FOREIGN KEY (artist_id) REFERENCES artists(id)
+);
 
 ```
 
