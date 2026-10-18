@@ -58,10 +58,14 @@ SELECT * FROM albums
 ORDER BY release_year;
 
 
---- query 2: Lista alla låtar på ett specifikt album ---
+SELECT * FROM songs
+WHERE album_id = 3
+ORDER BY track_number;
 
 
---- query 3: Antal låtar per album ---
+SELECT album_id, COUNT(*)
+FROM songs
+GROUP BY album_id;
 
 
 --- query 4: Längsta låten ---
