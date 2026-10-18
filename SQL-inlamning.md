@@ -54,7 +54,8 @@ CREATE TABLE songs (
 ## 3. Söka — SELECT
 
 ```sql
---- query 1: Lista alla album, sorterade efter år ---
+SELECT * FROM albums
+ORDER BY release_year;
 
 
 --- query 2: Lista alla låtar på ett specifikt album ---
@@ -93,7 +94,9 @@ CREATE TABLE songs (
 ## 6. Uppdatera en rad — UPDATE
 
 ```sql
---- uppdatera minst en rad i valfri tabell ---
+UPDATE songs
+SET album_id = 1
+WHERE id IN (7, 8, 9);
 
 ```
 
