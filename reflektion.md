@@ -12,7 +12,7 @@ till exempel skrev jag `FROM album_id` i stället för `FROM songs`. Jag råkade
 också lägga in dubletter av albumen och några låtar fick fel album_id, vilket
 jag fick rätta med DELETE och UPDATE. Det tog också en stund att få ordning på
 Git, Rider och ER-diagrammet.
-
+Använde mig även av AI för att förstå och felsöka syntax 
 ---
 
 ## Vad lärde du dig?
