@@ -94,8 +94,7 @@ VALUES ('Play Your Games', 195, 9, 1);
 ## 5. Ta bort en rad — DELETE
 
 ```sql
-
-
+DELETE FROM songs WHERE id = 10;
 ```
 
 ---
